@@ -1,0 +1,61 @@
+project_symphony/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # FastAPI app
+│   ├── dependencies.py      # Dependency injection
+│   ├── config.py           # Configuration
+│   └── routes/
+│       ├── __init__.py
+│       ├── projects.py     # Project endpoints
+│       └── tasks.py        # Task endpoints
+│
+├── core/
+│   ├── __init__.py
+│   ├── orchestrator.py     # Main orchestrator
+│   ├── models.py          # Pydantic models
+│   └── database.py        # Database setup
+│
+├── agents/
+│   ├── __init__.py
+│   ├── base_agent.py
+│   ├── project_manager.py  # Phase 1
+│   ├── coder_agent.py     # Phase 2 - Coder
+│   ├── designer_agent.py  # Phase 2 - Designer
+│   ├── researcher_agent.py # Phase 2 - Researcher
+│   ├── integrator_agent.py # Phase 3
+│   └── tester_agent.py    # Phase 4
+│
+├── services/
+│   ├── __init__.py
+│   ├── llm_service.py     # Free LLM services
+│   ├── file_service.py    # File operations
+│   └── cache_service.py   # Caching
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py
+│   ├── helpers.py
+│   └── prompts.py        # All prompts
+│
+├── static/
+│   └── index.html        # Web UI
+│
+├── generated_projects/   # Output projects
+│   └── .gitkeep
+│
+├── requirements.txt
+├── .env
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
+
+
+
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/uday9067/project-symphony.git
+cd project-symphony
